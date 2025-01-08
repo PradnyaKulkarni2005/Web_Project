@@ -19,17 +19,17 @@
             <span class="icon-close"><ion-icon name="close"></ion-icon></span>
             <div class="box">
                 <h2>LOGIN</h2>
-                <form action="#">
+                <form action="/login" method="post">
                     <div class="inp">
                         <span class="icon"><ion-icon name="mail" class="symbol"></ion-icon>
-                            <input type="email" required>
+                            <input type="email" name="email" required>
                             <label >Email</label><br>
                             <blockquote><hr></blockquote>
                         </span>
                     </div>
                     <div class="inp">
                         <span class="icon"><ion-icon name="lock-closed" class="symbol"></ion-icon>
-                            <input type="password" required>
+                            <input type="password" name="password" required>
                             <label >Password</label><br>
                             <blockquote><hr></blockquote>
                         </span>
@@ -39,7 +39,7 @@
                         <a href="#">Forgot Password</a>
                         <button type="submit" class="sub">Login</button>
                         <div class="register">
-                            <p>Don't have an account ?<a href="#" class="reg">Register</a></p>
+                            <p>Don't have an account ?<a href="/signup.html" class="reg">Register</a></p>
                         </div>
 
                     </div>
