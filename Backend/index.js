@@ -75,7 +75,6 @@ app.post('/login',(req,res) =>{
         res.json({message:'Login Successful !',token})
         // alert('Login Successful !')
         // res.sendFile(path.join(__dirname, 'Web_Project', 'home.html'))
-        
       }
       else{
         res.status(401).send('Invalid Password');
